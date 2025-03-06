@@ -1,0 +1,10 @@
+name: beholder-eye
+on: push
+
+jobs:
+  beholder-eye-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repository code
+        uses: actions/checkout@v4
+      - run: echo echo "$(cat hellow_world.txt)"
